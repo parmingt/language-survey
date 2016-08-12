@@ -18,5 +18,5 @@ Created using html, css, and javascript. Uses bootstrap for responsive design an
 
 ### License
 
-Copyright (c) 2016 Peter Armington \n
+Copyright (c) 2016 Peter Armington. 
 Protected under the MIT License
