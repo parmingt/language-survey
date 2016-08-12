@@ -33,11 +33,7 @@ function findLanguage(stackAnswer, companyAnswer, stabilityAnswer, bracketsAnswe
     PHPval+=2;
     Ruby-=2;
   }
-  console.log(CSSval);
-  console.log(Csharp);
-  console.log(Java);
-  console.log(PHPval);
-  console.log(Ruby);
+  
   // find max value
   var max = CSSval;
   var result = 'CSS';
