@@ -18,19 +18,56 @@
 
       <!-- survey -->
       <form id='survey'>
-        <div class='input-group'>
-          <span class='input-group-addon'>Name: </span>
-          <input type='text' class='form-control' id='firstName' placeholder="first"/>
-          <input type='text' class='form-control' id='lastName' placeholder="last"/>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <div class='input-group'>
+              <span class='input-group-addon'>First Name: </span>
+              <input type='text' class='form-control' id='firstName'/>
+            </div>
+          </div>
+          <div class='col-sm-6'>
+            <div class='input-group'>
+              <span class='input-group-addon'>Last Name: </span>
+              <input type='text' class='form-control' id='lastName'/>
+            </div>
+          </div>
         </div>
 
         <div class='input-group'>
-          <span class='input-group-addon'>What type of development would you prefer? </span>
+          <span class='input-group-addon'>Which development stack would you prefer? </span>
           <select id='stack' class='form-control'>
             <option>Front-end</option>
             <option>Back-end</option>
           </select>
         </div>
+
+        <div class='input-group'>
+          <span class='input-group-addon'>How big of a company would you prefer to work for? </span>
+          <select id='stack' class='form-control'>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </div>
+
+        <div class='input-group'>
+          <span class='input-group-addon'>Would you prefer the stability of an established language or the excitement of a new one? </span>
+          <select id='stack' class='form-control'>
+            <option>Established</option>
+            <option>New</option>
+          </select>
+        </div>
+
+        <div class='input-group'>
+          <span class='input-group-addon'>How to you feel about brackets? </span>
+          <select id='stack' class='form-control'>
+            <option>The more the better</option>
+            <option>Meh</option>
+            <option>Even one pair is too much</option>
+          </select>
+        </div>
+
+
       </form>
     </div>
   </body>
