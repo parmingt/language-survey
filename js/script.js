@@ -1,56 +1,56 @@
 function findLanguage(stackAnswer, companyAnswer, stabilityAnswer, bracketsAnswer, endUserAnswer){
-  var CSSval = 0;
-  var Csharp = 0;
-  var Java = 0;
-  var PHPval = 0;
-  var Ruby = 0;
+  var css = 0;
+  var csharp = 0;
+  var java = 0;
+  var php = 0;
+  var ruby = 0;
 
   if(stackAnswer === 'Front-end'){
-    CSSval+=5;
+    css+=5;
   }
 
   if(companyAnswer === 'Small'){
-    Ruby+=2;
+    ruby+=2;
   } else if(companyAnswer === 'Large'){
-    Csharp++;
-    Java++;
+    csharp++;
+    java++;
   }
 
   if(stabilityAnswer === 'Established'){
-    Csharp+=2;
-    Java++;
+    csharp+=2;
+    java++;
   } else if(stabilityAnswer === 'New'){
-    Ruby+=2;
+    ruby+=2;
   }
 
   bracketsAnswer = parseInt(bracketsAnswer);
-  Java += bracketsAnswer;
+  java += bracketsAnswer;
 
   if(endUserAnswer === 'Yes'){
-    Ruby+=2;
-    PHPval-=2;
+    ruby+=2;
+    php-=2;
   }else if(endUserAnswer === 'No'){
-    PHPval+=2;
-    Ruby-=2;
+    php+=2;
+    ruby-=2;
   }
-  
+
   // find max value
-  var max = CSSval;
+  var max = css;
   var result = 'CSS';
-  if(Csharp > max){
-    max = Csharp;
+  if(csharp > max){
+    max = csharp;
     result = 'C#';
   }
-  if(Java > max){
-    max = Java;
+  if(java > max){
+    max = java;
     result = 'Java';
   }
-  if(PHPval > max){
-    max = PHPval;
+  if(php > max){
+    max = php;
     result = 'PHP';
   }
-  if(Ruby > max){
-    max = PHPval;
+  if(ruby > max){
+    max = ruby;
     result = 'Ruby';
   }
 
